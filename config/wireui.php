@@ -114,13 +114,175 @@ return [
     |
      */
 
-    'components' => Config::defaultComponents([
-        // 'button' => [
-        //     'alias' => 'new-button',
-        // ],
-        // 'mini-button' => [
-        //     'class' => Components\Button\Mini::class,
-        //     'alias' => 'new-mini-button',
-        // ],
-    ]),
+//    'components' => Config::defaultComponents([
+//        // 'button' => [
+//        //     'alias' => 'new-button',
+//        // ],
+//        // 'mini-button' => [
+//        //     'class' => Components\Button\Mini::class,
+//        //     'alias' => 'new-mini-button',
+//        // ],
+//    ]),
+    'components' => [
+        'alert' => [
+            'class' => Components\Alert\Index::class,
+            'alias' => 'alert',
+        ],
+        'avatar' => [
+            'class' => Components\Avatar\Index::class,
+            'alias' => 'avatar',
+        ],
+        'badge' => [
+            'class' => Components\Badge\Base::class,
+            'alias' => 'badge',
+        ],
+        'mini-badge' => [
+            'class' => Components\Badge\Mini::class,
+            'alias' => 'mini-badge',
+        ],
+        'button' => [
+            'class' => Components\Button\Base::class,
+            'alias' => 'button',
+        ],
+        'mini-button' => [
+            'class' => Components\Button\Mini::class,
+            'alias' => 'mini-button',
+        ],
+        'card' => [
+            'class' => Components\Card\Index::class,
+            'alias' => 'card',
+        ],
+        'checkbox' => [
+            'class' => Components\Switcher\Checkbox::class,
+            'alias' => 'checkbox',
+        ],
+        'color-picker' => [
+            'class' => Components\ColorPicker\Picker::class,
+            'alias' => 'color-picker',
+        ],
+        'datetime-picker' => [
+            'class' => Components\DatetimePicker\Picker::class,
+            'alias' => 'datetime-picker',
+        ],
+        'dialog' => [
+            'class' => Components\Dialog\Index::class,
+            'alias' => 'dialog',
+        ],
+        'dropdown' => [
+            'class' => Components\Dropdown\Base::class,
+            'alias' => 'dropdown',
+        ],
+        'dropdown.item' => [
+            'class' => Components\Dropdown\Item::class,
+            'alias' => 'dropdown.item',
+        ],
+        'dropdown.header' => [
+            'class' => Components\Dropdown\Header::class,
+            'alias' => 'dropdown.header',
+        ],
+        'error' => [
+            'class' => Components\Errors\Single::class,
+            'alias' => 'error',
+        ],
+        'errors' => [
+            'class' => Components\Errors\Multiple::class,
+            'alias' => 'errors',
+        ],
+        'icon' => [
+            'class' => Components\Icon\Index::class,
+            'alias' => 'icon',
+        ],
+        'input' => [
+            'class' => Components\TextField\Input::class,
+            'alias' => 'input',
+        ],
+        'currency' => [
+            'class' => Components\TextField\Currency::class,
+            'alias' => 'currency',
+        ],
+        'maskable' => [
+            'class' => Components\TextField\Maskable::class,
+            'alias' => 'maskable',
+        ],
+        'number' => [
+            'class' => Components\TextField\Number::class,
+            'alias' => 'number',
+        ],
+        'password' => [
+            'class' => Components\TextField\Password::class,
+            'alias' => 'password',
+        ],
+        'phone' => [
+            'class' => Components\TextField\Phone::class,
+            'alias' => 'phone',
+        ],
+        'label' => [
+            'class' => Components\Label\Index::class,
+            'alias' => 'label',
+        ],
+        'link' => [
+            'class' => Components\Link\Index::class,
+            'alias' => 'link',
+        ],
+        'modal' => [
+            'class' => Components\Modal\Index::class,
+            'alias' => 'modal',
+        ],
+        'modal-card' => [
+            'class' => Components\Modal\Card::class,
+            'alias' => 'modal-card',
+        ],
+        'native-select' => [
+            'class' => Components\Select\Native::class,
+            'alias' => 'native-select',
+        ],
+        'notifications' => [
+            'class' => Components\Notifications\Index::class,
+            'alias' => 'notifications',
+        ],
+        'radio' => [
+            'class' => Components\Switcher\Radio::class,
+            'alias' => 'radio',
+        ],
+        'select' => [
+            'class' => Components\Select\Base::class,
+            'alias' => 'select',
+        ],
+        'select.option' => [
+            'class' => Components\Select\Option::class,
+            'alias' => 'select.option',
+        ],
+        'select.user-option' => [
+            'class' => Components\Select\UserOption::class,
+            'alias' => 'select.user-option',
+        ],
+        'textarea' => [
+            'class' => Components\TextField\Textarea::class,
+            'alias' => 'textarea',
+        ],
+        'time-picker' => [
+            'class' => Components\TimePicker\Picker::class,
+            'alias' => 'time-picker',
+        ],
+        'time-selector' => [
+            'class' => Components\TimePicker\Selector::class,
+            'alias' => 'time-selector',
+        ],
+        'toggle' => [
+            'class' => Components\Switcher\Toggle::class,
+            'alias' => 'toggle',
+        ],
+        'popover' => [
+            'class' => Components\Popover\Index::class,
+            'alias' => 'popover',
+        ],
+        'switcher' => [
+            'class' => Components\Wrapper\Switcher::class,
+            'alias' => 'switcher',
+        ],
+        'text-field' => [
+            'class' => Components\Wrapper\TextField::class,
+            'alias' => 'text-field',
+        ],
+    ],
 ];
